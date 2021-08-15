@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile_Bold.ttf');
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile_Medium.ttf');
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile.ttf');
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile_Light.ttf');
+}
+
+@font-face {
+  font-family: 'iransans';
+  font-style: normal;
+  font-weight: 200;
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/IRANSansMobile_UltraLight.ttf');
+}
+
+/*!*icons font*!*/
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  text-shadow: none !important;
+}
+h4 {
+  text-shadow: none !important;
+  line-height: 1.3rem !important;
+}
+
+body {
+}
+
+@font-face {
+  font-family: 'snappfood';
+  font-display: fallback;
+  src: url('https://snappfood.ir/pwa/assets/fonts/snappfood.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: 'snappfood' !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^='sf-']:before,
+[class*=' sf-']:before {
+  font-family: 'snappfood' !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sf-arrow-left-circle:before {
+  content: '\61';
+}
+
+.sf-bits:before {
+  content: '\62';
+}
+
+.sf-camera:before {
+  content: '\63';
+}
+
+.sf-caution:before {
+  content: '\64';
+}
+
+.sf-cellphone:before {
+  content: '\65';
+}
+
+.sf-check-circle:before {
+  content: '\66';
+}
+
+.sf-clock:before {
+  content: '\67';
+}
+
+.sf-comment:before {
+  content: '\68';
+}
+
+.sf-credit-card:before {
+  content: '\69';
+}
+
+.sf-key:before {
+  content: '\6a';
+}
+
+.sf-location:before {
+  content: '\6b';
+}
+
+.sf-logout:before {
+  content: '\6c';
+}
+
+.sf-marker:before {
+  content: '\6d';
+}
+
+.sf-marker-plus:before {
+  content: '\6e';
+}
+
+.sf-pen:before {
+  content: '\6f';
+}
+
+.sf-shopping-cart:before {
+  content: '\70';
+}
+
+.sf-store-plus:before {
+  content: '\71';
+}
+
+.sf-user:before {
+  content: '\72';
+}
+
+.sf-user-plus:before {
+  content: '\73';
+}
+
+.sf-wallet-plus:before {
+  content: '\74';
+}
+
+.sf-bike-circle:before {
+  content: '\75';
+}
+
+.sf-leaf-circle:before {
+  content: '\76';
+}
+
+.sf-biker-circle:before {
+  content: '\77';
+}
+
+.sf-new-circle:before {
+  content: '\78';
+}
+
+.sf-percent-circle:before {
+  content: '\79';
+}
+
+.sf-clock2:before {
+  content: '\7a';
+}
+
+.sf-sweet-circle:before {
+  content: '\41';
+}
+
+.sf-gift-circle:before {
+  content: '\42';
+}
+
+.sf-cross:before {
+  content: '\43';
+}
+
+.sf-filter:before {
+  content: '\44';
+}
+
+.sf-bag:before {
+  content: '\45';
+}
+
+.sf-arrow-up-down:before {
+  content: '\46';
+}
+
+.sf-magnifier:before {
+  content: '\47';
+}
+
+.sf-check-circle-light:before {
+  content: '\48';
+}
+
+.sf-location2-light:before {
+  content: '\49';
+}
+
+.sf-location-light:before {
+  content: '\4a';
+}
+
+.sf-store-light:before {
+  content: '\4b';
+}
+
+.sf-phone-light:before {
+  content: '\4c';
+}
+
+.sf-user-light:before {
+  content: '\4d';
+}
+
+.sf-marker-light:before {
+  content: '\4e';
+}
+
+.sf-envelope-light:before {
+  content: '\4f';
+}
+
+.sf-dish-light:before {
+  content: '\50';
+}
+
+.sf-bits-light:before {
+  content: '\51';
+}
+
+.sf-camera-light:before {
+  content: '\52';
+}
+
+.sf-cellphone-light:before {
+  content: '\53';
+}
+
+.sf-key-light:before {
+  content: '\54';
+}
+
+.sf-gift-light:before {
+  content: '\55';
+}
+
+.sf-pen-light:before {
+  content: '\56';
+}
+
+.sf-wallet-plus-light:before {
+  content: '\57';
+}
+
+.sf-wallet-light:before {
+  content: '\58';
+}
+
+.sf-arrow-right-light:before {
+  content: '\59';
+}
+
+.sf-heart:before {
+  content: '\5a';
+}
+
+.sf-home:before {
+  content: '\30';
+}
+
+.sf-location2:before {
+  content: '\31';
+}
+
+.sf-shopping-cart2:before {
+  content: '\34';
+}
+
+.sf-share:before {
+  content: '\35';
+}
+
+.sf-setting:before {
+  content: '\36';
+}
+
+.sf-trash:before {
+  content: '\37';
+}
+
+.sf-menu:before {
+  content: '\38';
+}
+
+.sf-cup:before {
+  content: '\39';
+}
+
+.sf-dish:before {
+  content: '\21';
+}
+
+.sf-cake:before {
+  content: '\22';
+}
+
+.sf-basket:before {
+  content: '\23';
+}
+
+.sf-arrow-down:before {
+  content: '\24';
+}
+
+.sf-arrow-left:before {
+  content: '\25';
+}
+
+.sf-arrow-right:before {
+  content: '\26';
+}
+
+.sf-arrow-up:before {
+  content: '\27';
+}
+
+.sf-check:before {
+  content: '\28';
+}
+
+.sf-pen-1:before {
+  content: '\29';
+}
+
+.sf-trash-1:before {
+  content: '\2a';
+}
+
+.sf-camera-circle:before {
+  content: '\2b';
+}
+
+.sf-foot-print-circle:before {
+  content: '\2c';
+}
+
+.sf-foot-print-circle-fill:before {
+  content: '\2d';
+}
+
+.sf-phone-circle-fill:before {
+  content: '\2e';
+}
+
+.sf-phone-circle:before {
+  content: '\2f';
+}
+
+.sf-star-circle:before {
+  content: '\3a';
+}
+
+.sf-star-cicle-fill:before {
+  content: '\3b';
+}
+
+.sf-ribbon-circle-fill:before {
+  content: '\3c';
+}
+
+.sf-ribbon-circle:before {
+  content: '\3d';
+}
+
+.sf-heart-circle:before {
+  content: '\3e';
+}
+
+.sf-heart-circle-fill:before {
+  content: '\3f';
+}
+
+.sf-camera-circle-fill:before {
+  content: '\40';
+}

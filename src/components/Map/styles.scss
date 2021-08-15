@@ -1,0 +1,11 @@
+@import '../../themes/base/mixins';
+
+.container {
+  width: 100%;
+  height: 100%;
+  @include flexCenter;
+}
+.mapContainer {
+  width: 100%;
+  height: 100%;
+}

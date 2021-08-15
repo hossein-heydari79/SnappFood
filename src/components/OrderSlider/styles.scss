@@ -1,0 +1,76 @@
+@import '../../themes/base/mixins';
+
+.orderSlider {
+  position: fixed;
+  bottom: 3rem;
+  z-index: 500;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100vw;
+  height: 10rem;
+  overflow-x: auto;
+  align-items: center;
+  direction: rtl;
+  .card {
+    width: 80%;
+    flex: 0 0 auto;
+  }
+  .cardContainer {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    direction: rtl;
+    @include box-shadow(0px 0px 15px 0px rgba(0, 0, 0, 0.4));
+    .icon {
+      border-radius: 50%;
+      border: 1px solid var(--separator-color);
+      display: inline-block;
+      padding: 15px;
+      .cardImg {
+        width: 50px;
+      }
+    }
+    .text {
+      text-align: right;
+      margin-right: 0.5rem;
+      .title {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .description {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+.orderSlider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.pickup {
+  padding: 24px;
+  border-top: 1px solid var(--separator-color);
+  @include flexLayout(row, space-between, center, wrap);
+  &__name {
+    @include fontStyles(--text-large, --font-bold);
+  }
+  &__address {
+    widows: 100%;
+    flex: 0 0 100%;
+    margin-top: 16px;
+    @include fontStyles(--text-medium, --font-light);
+  }
+  &__button {
+    padding: 8px 24px;
+    border-radius: 6px;
+    background-color: var(--light-blue-color);
+    @include fontStyles(--text-medium, --font-medium, --white-color);
+  }
+}

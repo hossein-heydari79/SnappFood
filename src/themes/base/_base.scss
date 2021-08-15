@@ -1,0 +1,133 @@
+@import '~themes/base/mixins';
+
+html {
+  direction: rtl;
+  box-sizing: border-box;
+  // scroll-behavior: smooth;
+  --animation-time: 600ms;
+  --bg-main-color: #fff;
+  --bg-blue-color: #f2f5fa;
+  --disabled-bg-color: #f9f9f9;
+  --disabled-dark-bg-color: #c1c1c1;
+  --primary-color: #ff00a4;
+  --similar-list-background: #f8f9fb;
+  --text-color: #404040;
+  --text-white: #fff;
+  --text-green: #22a958;
+  --input-color: #cbcbcb;
+  --text-color-light: #a3a3a3;
+  --text-icon-color: #f2f2f2;
+  --separator-color: #e6e6e6;
+  --separator-color-bold: #ccc;
+  --border-color: #f4f5f7;
+  --card-border-color: #f2f2f2;
+  --highlight-color: #3478f6;
+  --error-color: #bd272d;
+  --text-x-small: 10px;
+  --text-small: 12px;
+  --text-medium: 14px;
+  --text-size: 16px;
+  --text-large: 20px;
+  --text-x-large: 24px;
+  --text-xx-large: 28px;
+  --text-title-size: 40px;
+  --nav-size: 48px;
+  --shell-margin-bottom: 67px;
+  --font-ultraLight: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 600;
+  --card-shadow-1: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  --card-shadow-2: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --danger-color: red;
+  --black-color: #353535;
+  --white-color: #fff;
+  --dark-blue: #001fbb;
+  --green-color: #00d170;
+  --forest-green-color: #2a9134;
+  --gray-color: #505050;
+  --gray-dark-color: #383838;
+  --gray-light-color: #979797;
+  --gray-lighter-color: #c7c7c7;
+  --gray-lightest-color: #f4f3f3;
+  --silver-color: #868686;
+  --sea-blue-color: #78b6de;
+  --red-color: #f13224;
+  --yellow-color: #fed593;
+  --lipstick: #aa004e;
+  --separator: 1px solid var(--separator-color);
+  --border: 1px solid var(--border-color);
+  --card-border: 1px solid var(--card-border-color);
+  --active-tab-border: 2px solid var(--forest-green-color);
+  --active-indicator-border: 1px solid var(--forest-green-color);
+  --light-gray: #f8f9fb;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+* {
+  -webkit-overflow-scrolling: touch;
+  letter-spacing: 0;
+}
+*/
+body {
+  font-family: 'iransans';
+  background: var(--bg-main-color);
+  min-width: 300px;
+  font-size: var(--text-small);
+  color: var(--gray-color);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  @include fontStyles(--text-xx-large, --font-bold);
+}
+
+h4 {
+  @include fontStyles(--text-large, --font-regular);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  // color: inherit;
+  text-decoration: none;
+}
+
+#app {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
